@@ -1,0 +1,41 @@
+<?php 
+    include_once("../constants.php");
+    include_once($pathToTop . "mwma_access/include/session.php");
+    include_once($pathToTop . "logging.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Midwest Morris Ale, Inc.</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href='<? echo $topURL . "morris.php" ?>' rel='stylesheet' type='text/css'/>
+<link href='<? echo $topURL . "tabs_css.php" ?>'   rel="stylesheet" type="text/css" />
+<link href='<? echo $topURL . "menu.php" ?>'   rel="stylesheet" type="text/css" />
+<link rel="icon" type='<? echo $topURL . "image/x-icon" ?>' href='<? echo $topURL . "favicon.ico"?>'>
+</head>
+<body>
+
+<?php
+    include_once($pathToTop . "variables.php");
+    include_once("local_variables.php");
+    $tab3class = "tab activeTab";
+    $menu2class = "menu activeTab";
+?>
+
+<div class="tabBox" style="clear:both;">
+    <?php include_once($pathToTop . "tabs.php");?>
+    <div class="textOuter">
+        <div class="menuBox" style="clear:both;">
+            <?php include("menu.php");?>
+            <div class="textInner">
+                <h1>Mass Dances Used in Past Ales</h1>
+                <?php include_once($pathToTop . "php-excel-reader-2.21/display_mass_dance_history.php"); ?>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<? include_once($pathToTop . "footer.php");; ?>
+</body>
+</html>

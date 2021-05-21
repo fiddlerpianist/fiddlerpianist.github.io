@@ -1,0 +1,106 @@
+
+/******************************************************************************
+* Styles for the tabbed displays.                                             *
+******************************************************************************/
+
+// <!--#include file="tabcolors.css" -->
+/*-----------------------------------------------------------------------------
+  Note: The border-radius property is a proposed feature for CSS3 which creates
+        rounded corners. Mozilla/Netscape browsers currently support this
+        feature via the proprietary -moz-border-radius property. Both are
+        defined here. Browsers that support neither should simply ignore them.
+-----------------------------------------------------------------------------*/
+
+div.tabBox {
+  
+}
+
+div.tabArea {
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0px 0px 3px 0px;
+}
+
+a.tab {
+  background-color: #33CC00;
+  border: 2px solid;
+  border-bottom-width: 0px;
+  border-color: #3FFF00 #269900 #269900 #3FFF00;
+  -moz-border-radius: .75em .75em 0em 0em;
+  border-radius-topleft: .75em;
+  border-radius-topright: .75em;
+  padding: 2px 1em 2px 1em;
+  position: relative;
+  text-decoration: none;
+  top: 3px;
+  z-index: 100;
+}
+
+a.tab, a.tab:visited {
+  color: #0C3200;
+}
+
+a.tab:hover {
+  background-color: #3FFF00;
+  border-color:     #66FF33 #33CC00 #33CC00 #66FF33;
+  color:            #0C3200;
+}
+
+a.tab.activeTab, a.tab.activeTab:hover, a.tab.activeTab:visited {
+  background-color: #B2FF99;
+  border-color:     #D8FFCB #8CFF66 #8CFF66 #D8FFCB;    
+  color:            #0C3200;           
+}
+
+a.tab.activeTab {
+  padding-bottom: 4px;
+  top: 1px;
+  z-index: 102;
+}
+
+div.textOuter {
+  background-color: #B2FF99;
+  border: 2px solid;
+  border-color:     #D8FFCB #8CFF66 #8CFF66 #D8FFCB;    
+  -moz-border-radius: 0em .5em .5em 0em;
+  border-radius-topright: .5em;
+  border-radius-bottomright: .5em;
+
+  padding:         0.5em;
+  padding-bottom:  1.0em;
+
+  position:        relative;
+  z-index:         101;
+
+  margin-top:      0.0em;
+  margin-right:    0.0em;
+  margin-left:     0.0em;
+  margin-bottom:   0.5em;
+
+  
+}
+div.textInner {
+  background-color: white;
+  border-color:     #3FFF00;
+  border-style:     ridge;
+  border-width:     6px;    
+  padding:          0.5em;
+  position:         relative;
+  z-index:          102;
+  margin:           0.5em;
+  height:           100%;  /*  This causes the inner text box (where all the stuff goes) to   
+                            * expand to all available space, taking into accout the paddings 
+                            * and margins.  This appears to solve a problem, that only       
+                            * appeared on older version of IE (pre 8) and possibly older     
+                            * version of Firefox, where CSS box elements (tables, div, img,  
+                            * etc.) would extend beyond the boundaries of the inner text box 
+                            * even though they should have been contained within them.       
+                            *
+                            * So the moral of the story is to specify the height rather than
+                            * leaving it open to interpretation by the browser.             
+                            */
+   overflow: auto;                                                                
+}
+
+
+

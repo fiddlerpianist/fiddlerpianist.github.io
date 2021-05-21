@@ -1,0 +1,63 @@
+
+/******************************************************************************
+* Styles for the tabbed displays.                                             *
+******************************************************************************/
+
+// <!--#include file="tabcolors.css" -->
+/*-----------------------------------------------------------------------------
+  Note: The border-radius property is a proposed feature for CSS3 which creates
+        rounded corners. Mozilla/Netscape browsers currently support this
+        feature via the proprietary -moz-border-radius property. Both are
+        defined here. Browsers that support neither should simply ignore them.
+-----------------------------------------------------------------------------*/
+
+div.menuBox {}
+
+div.menuArea {
+  font-size: 90%;
+  font-weight: bold;
+  padding: 0px 0px 3px 0px;
+}
+
+.menu {
+    text-align:     center;
+    vertical-align: middle;
+    font-size:      80%;
+    font-weight:    bold;
+    font-family:    times;
+    padding:        3px 0px 10px 10px;
+}
+ 
+                                                                                                             
+a.menu, a.menu:hover, a.menu:focus, a.menu.visited {
+    color: #249800;           
+    text-decoration: none;           
+}
+
+a.menu:hover, a.menu:focus {
+    color: #0C3200;           
+    text-decoration: none;           
+}
+
+a.menu.activeTab, a.menu.activeTab:hover, a.menu.activeTab:visited {
+    color: #0C3200;
+    text-decoration: underline;           
+}
+
+a.menu.white_text {
+    color: white;
+}
+
+a.menu.activeTab.white_text {
+    text-decoration: underline;           
+    color: white;
+}
+
+.menu_space {
+    height:   2px;
+    width:    2px; 
+    }
+
+
+
+

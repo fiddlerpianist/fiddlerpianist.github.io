@@ -1,0 +1,625 @@
+/**********************************************************************/
+/* Here to next big comment defines the format of common HTML objects */
+/**********************************************************************/
+
+
+html, body {
+    color: red;
+    font-size: 1em;
+    font-family: times, arial, "lucida console", sans-serif;
+    background-color: black;
+    height: 100%;
+}
+
+h1 {
+    color:       black;
+    font-size:   130%;
+    font-weight: bold;
+   }
+
+h2 {
+    color:       black;
+    font-size:   120%;
+    font-weight: bold;
+   }
+
+h3 {
+    color:       black;
+    font-size:   130%;
+    font-weight: bold;
+   }
+
+p {
+    color:       black;
+    font-size: 100%;
+    text-align: left;
+}
+
+p.dropcap:first-letter 
+{
+    color:       black;
+    font-size:   300%;
+    font-weight: normal;
+    font-family: Book Antiqua, times, arial, "lucida console", sans-serif;
+    padding-top: 0.1em;
+    float:       left;
+    width:       1em;
+}
+
+*.dropcap:first-letter 
+{ 
+    font-size:   275%; 
+    font-family: Book Antiqua, times, arial, "lucida console", sans-serif;
+    line-height: normal; 
+    font-weight: bold;
+    padding-top: 0.1em;
+    float:       left;
+    width:       1em;
+}
+
+img.floatright {
+    float: right;
+}
+
+div.center {
+    text-align:   center;
+    margin-left:  auto;
+    margin-right: auto;
+    padding:      0.5em;
+}
+
+div.floatleft {
+    float: left;
+    position: relative;
+}
+
+div.floatright {
+    float: right;
+    position: relative;
+}
+
+a:link, a:visited {
+    color:           black;
+    /* text-decoration: underline; */
+}
+
+a:hover {
+    color:           purple;
+    /* text-decoration: underline; */
+}
+
+
+li {
+    color:       black;
+    font-size:   100%;
+    font-family: times, arial, "lucida console", sans-serif;
+    font-weight: normal;
+    text-align:  left;
+}
+ul {
+    color:       black;
+    font-size:   100%;
+    font-family: times, arial, "lucida console", sans-serif;
+    font-weight: bold;
+    text-align:  left;
+}
+
+table /* Default table settings */
+{
+    color:        black;
+    font-size:    100%;
+    position:     relative;
+    z-index:      auto;
+    table-layout: auto;
+}
+th
+{
+    font-weight: bold;
+    /* text-decoration: bold; */
+}
+
+.small_thinborder 
+{
+	font-family:     sans-serif;
+	font-size:       0.8em;
+}
+
+input.small_thinborder
+{
+}
+
+
+table.small_thinborder 
+{
+    padding:         3px;
+	border-style:    ridge;
+	border-width:    2px;
+	border-collapse: collapse;
+}
+
+table.small_thinborder thead th, table.small_thinborder tbody th 
+{
+	background:    #CCCCCC;
+	border-style:  ridge;
+	text-align:    center;
+	vertical-align:bottom;
+}
+
+table.small_thinborder tbody td 
+{
+    padding:       3px;
+	border-style:  ridge;
+	text-align:    center;
+	vertical-align:middle;
+}
+
+table.small_thinborder tfoot th
+{
+    padding:       3px;
+	border-style:  ridge;
+	background:    #CCCCCC;
+	text-align:    center;
+	vertical-align:bottom;
+	/* width:     20px; */
+}
+/*
+table.small_thinborder tbody td 
+{
+  padding:       3px;
+  border:        solid black; 
+}*/
+
+table.small_thinborderless 
+{
+    padding:         1px;
+	border-width:    0px;
+	border-collapse: collapse;
+    border-style:    none;
+    text-align:      left;
+}
+
+table.small_thinborderless tbody td 
+{
+	text-align:    left;
+	vertical-align:middle;
+    padding:       1px;
+	border-style:  none;
+}
+
+table.small_thinborderless tbody th 
+{
+	text-align:    center;
+	vertical-align:middle;
+    padding:       1px;
+    font-weight:   bold;
+}
+
+table.small_mediumborder 
+{
+	border-style:    ridge;
+	border-width:    3;
+	border-collapse: collapse;
+	font-family:     sans-serif;
+	font-size:       80%;
+}
+
+table.small_mediumborder thead th, table.small_mediumborder tbody th 
+{
+	background:    #CCCCCC;
+	border-style:  ridge;
+	border-width:  1;
+	text-align:    center;
+	vertical-align:bottom;
+}
+
+table.small_mediumborder tbody th 
+{
+    padding: 3px;
+	text-align:center;
+	/* width:     20px; */
+}
+
+table.small_mediumborder tfoot 
+{
+    padding: 3px;
+	background:    #CCCCCC;
+	text-align:center;
+    vertical-align:top;
+	/* width:     20px; */
+}
+
+table.small_mediumborder tbody td 
+{
+    padding: 3px;
+	border:  3px solid black; // #EEEEEE;
+	vertical-align:middle;
+}
+
+
+
+table.table_small /* Table with slightly small text */
+{
+    color:        black;
+    font-size:    80%;
+    font-family:  arial, "lucida console", sans-serif;
+    position:     relative;
+    z-index:      auto;
+    table-layout: auto;
+}
+tr.table_small
+{
+}
+th.table_small
+{
+    text-decoration: bold;
+}
+td.table_small
+{
+}
+
+table.table_smaller /* Table with slightly smaller text */
+{
+    color:        black;
+    font-size:    70%;
+    font-family:  arial, "lucida console", sans-serif;
+    position:     relative;
+    z-index:      auto;
+    table-layout: auto;
+}
+tr.table_smaller
+{
+}
+th.table_smaller
+{
+    text-decoration: bold;
+}
+td.table_smaller
+{
+}
+
+table.table_smallest /* Table with slightly smallest text */
+{
+    color:        black;
+    font-size:    60%;
+    font-family:  arial, "lucida console", sans-serif;
+    position:     relative;
+    z-index:      auto;
+    table-layout: auto;
+}
+tr.table_smallest
+{
+}
+th.table_smallest
+{
+    text-decoration: bold;
+}
+td.table_smallest
+{
+}
+
+/**********************************************************************/
+/* Here to next big comment defines clever stuff that doesn't work with IE */
+/**********************************************************************/
+
+/* 
+ * The 'fixedTopCenter' class places the element just below 
+ * the top of the browser window.
+ */ 
+.fixedTopCenter 
+{
+        position: fixed;
+        top: 1em;
+        z-index: 1;
+        text-align:center;
+        width: 100%;
+}
+
+
+/* 
+ * The 'copyrightBottomLeft' class places the element just above 
+ * the bottom of the browser window.
+ */ 
+.copyrightBottomLeft 
+{
+    font-size:  50%;
+    top:        auto;
+    left:       0em;
+    bottom:     0em;
+    z-index:    1;
+    text-align: center;
+    width:      24em;
+    height:     2em;
+    color: #FFD700; /* gold */;
+}
+.counterBottomRight 
+{
+    float: right;
+    font-size:  50%;
+    top:        auto;
+    left:       auto;
+    right:      0em;
+    bottom:     0em;
+    z-index:    1;
+    text-align: right;
+    width:      24em;
+    height:     2em;
+    color:      #FFD700; /* gold */;
+}
+
+table.normal 
+{
+    font-size: 100%;
+    position:  relative;
+}
+
+th.normal
+{
+    font-size:   200%;
+    font-weight: bold;
+    text-align:  center;
+}
+
+td.normal
+{
+}
+
+
+/*************************************************/
+/* Here to next big comment defines table stuff  */
+/*************************************************/
+/* All 'TABLE' elements using CLASS 'repertoire' will have the 
+ * characteristics described below.
+ */
+table.repertoire
+{
+   position:        relative; 
+   background-color:white;
+   width:           100%;
+
+   font-family: arial;
+   font-size:   0.75em;
+   text-align:  left;
+
+   border-collapse: separate;
+   border:          1px solid #3FFF00;
+   border-spacing:  0em;
+   padding:         0em;
+}
+th.repertoire
+{
+    background-color: #B2FF99;
+    color: black;
+    font-weight:      bold;
+    border-bottom:  1px solid #3FFF00;
+}
+td.repertoire
+{
+    background-color: white;
+    font-weight:      normal;
+    border-bottom:  1px solid #3FFF00;
+}
+
+a.repertoire:visited, a.repertoire:link
+{
+    color: black;
+    text-decoration: underline;
+}
+/* All 'TABLE' elements using CLASS 'val_table' will have the 
+ * characteristics described below.
+ */
+table.val_table
+{ 
+   background-color:white;
+
+   font-family: arial;
+   /* font-size:    10em; */
+
+   width:  100%;       /* Fill the width of the browser window  */
+   height: 100%;       /* Fill the height of the browser window */
+
+   border-style:       solid;
+   border-color:       black;
+   border-width:         0em;  /* no border */
+   border-collapse: separate;
+   border-spacing:       0em;
+   padding:              0em;
+}
+
+caption.val_table
+{
+   background-color:white;
+   color:black;
+
+   text-align:  center;
+   /* font-size:    10em; */
+   font-family:  times;
+   border-style: solid;
+   border-width:   0em;
+}
+
+th.val_table
+{
+   position:        relative;
+   background-image: url('http://www.maroonbellsmorris.com/images/morrisbanner.jpg');
+   color:              black;
+
+   text-align:  center;
+   border-width:   0em;
+}
+
+
+tr.val_table
+{
+    width:100%;
+}
+
+td.val_table
+{  
+   background-color:white;
+
+   height:          100%; 
+ 
+   border-style:  dashed;
+   border-width:     0px;
+   text-align:    center;
+   vertical-align:   top;
+   padding: 5px;
+}
+
+
+/*****************************************************************/
+/* Here to next big comment defines the left menus */
+/*****************************************************************/
+
+.menu {
+    text-align:    right;
+    vertical-align: middle;
+    font-size:      16px;
+    font-weight:  bolder;
+    font-family:   times;
+}
+ 
+.menu_box {
+    background-image: url('http://www.maroonbellsmorris.com/images/menu_bg_grey_diagnal_fade.jpg');
+    background-repeat: no-repeat;    
+    width:        12.0em; 
+    height:        2.5em; 
+} 
+
+.menu_box_current {
+    background-image: url('http://www.maroonbellsmorris.com/images/menu_bg_yellow_diagnal_fade_current.jpg');
+    background-repeat: no-repeat;    
+    width:        12.0em; 
+    height:        2.5em; 
+} 
+
+.menu a:link, .menu a:visited {
+    color:#800000; /* maroon */
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color:blue;
+    text-decoration: none;
+}
+
+.menu_space {
+    height:   2px;
+    width:    2px; 
+    }
+
+/*****************************************************/
+/* Here to next big comment defines the album styles */
+/*****************************************************/
+#album_box {
+    float:  left;
+    height: 15em;
+    width:  12em;
+    display:  block;
+    border: 1px; 
+}
+#album_box p {
+    font-size: 1em;
+    font-family: times, arial, "lucida console", sans-serif;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#album_box img {
+    border:   0px;
+}
+
+#album_box a {
+    border:   0px;
+}
+/*****************************************************/
+/* Here to next big comment defines the credt styles */
+/*****************************************************/
+.pic_credit {
+    text-align: right;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+/******************************************************************************
+* Styles for the login box in the upper right corner of the tab area.                                             *
+******************************************************************************/
+
+div.loginBox 
+{
+  /* position: absolute; */
+  float:         right;
+  margin:        0;
+  padding-top:   0;
+  padding-right: 0;
+  padding-bottom:0.1em;
+  padding-left:  0;
+  z-index:       103;
+  
+  color:         white;
+  font-size:     80%;
+  font-weight:   bold;
+  text-align:    right;
+}
+
+a.loginBox 
+{
+  color:           white;
+  font-size:       80%;
+  text-decoration: none;
+  z-index:         auto;
+}
+
+a.loginBox:visited 
+{
+  color:           white;
+  text-decoration: none;
+}
+
+a.loginBox:hover 
+{
+  color:           white;
+  text-decoration: underline;
+}
+
+/******************************************************************************
+* Styles for the special message box to the right of the tab area.                                             *
+******************************************************************************/
+
+div.special_message 
+{
+  /* position: absolute; */
+  float:         right;
+  margin:        0;
+  padding-top:   0;
+  padding-right: 0;
+  padding-bottom:0.1em;
+  padding-left:  0;
+  z-index:       103;
+  
+  color:         yellow;
+  font-size:     80%;
+  font-weight:   bold;
+  text-align:    right;
+}
+
+a.special_message 
+{
+  color:           yellow;
+  font-size:       100%;
+  text-decoration: none;
+  z-index:         auto;
+}
+
+a.special_message:visited 
+{
+  color:           yellow;
+  text-decoration: none;
+}
+
+a.special_message:hover 
+{
+  color:           yellow;
+  text-decoration: underline;
+}
+
